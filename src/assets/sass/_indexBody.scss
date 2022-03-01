@@ -1,0 +1,91 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#banner-part {
+    height: 520px;
+    background-image: url(../images/BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: cover;
+    position: relative;
+    padding-top: 190px;
+
+    .delegatorAddress {
+        height: 400px;
+        background: #FFFFFF;
+        box-shadow: 10px 15px 20px 5px rgba(10, 2, 34, 0.1);
+        border-radius: 40px;
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            padding: 70px 0px 20px;
+            position: relative;
+
+
+            &:after {
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 400px;
+                background-color: #FF734A;
+                bottom: 12px;
+                left: 32%;
+            }
+        }
+
+        span {
+            position: relative;
+
+            input {
+                border: 2px solid #3B14AB;
+                width: 780px;
+                height: 76px;
+                background: #FFFFFF;
+                border-radius: 40px;
+                padding: 0px 0px 0px 90px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #A6B0CF;
+                position: relative;
+
+
+                &::placeholder {
+                    color: #A6B0CF;
+                }
+            }
+
+            svg {
+                font-size: 30px;
+                color: #A6B0CF;
+                position: absolute;
+                top: 0;
+                left: 5%;
+            }
+        }
+
+        button {
+            width: 186px;
+            height: 76px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFFFFF;
+            background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+            box-shadow: 5px 10px 8px rgba(59, 20, 171, 0.15);
+            border-radius: 40px;
+            border: none;
+            margin-left: 15px;
+
+            svg {
+                margin-left: 2px;
+                font-size: 25px;
+            }
+        }
+    }
+}
