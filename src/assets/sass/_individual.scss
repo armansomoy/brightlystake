@@ -1,3 +1,95 @@
+#individualBanner {
+    height: 585px;
+    background-image: url(../images/BG-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: cover;
+    position: relative;
+    padding-top: 190px;
+
+    h4 {
+        margin: 40px 0;
+
+        a {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: rgba(34, 39, 55, 0.15);
+            border-radius: 20px;
+            padding: 15px 30px;
+            text-decoration: none;
+            transition: all linear 0.3s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .luckyveBtn {
+        padding: 15px 30px;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 63px;
+        text-transform: uppercase;
+        display: inline-block;
+
+        p {
+            /* Fallback: Set a background color. */
+            background-color: red;
+
+            /* Create the gradient. */
+            background-image: linear-gradient(90deg, #9D46BB, #0873D7, #FFB74A, #FF6972);
+
+            /* Set the background size and repeat properties. */
+            background-size: 100%;
+            background-repeat: repeat;
+
+            /* Use the text as a mask for the background. */
+            /* This will show the gradient as a text color rather than element bg. */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+    }
+
+    button {
+        padding: 15px 30px;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 63px;
+        text-transform: uppercase;
+        border: none;
+
+        /* Fallback: Set a background color. */
+        background-color: red;
+
+        /* Create the gradient. */
+        background-image: linear-gradient(90deg, #27E2A2, #C1ED30);
+
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+
+
+}
+
 #moonbeamBanner {
     height: 350px;
     background-image: url(../images/BG-2.png);
@@ -15,7 +107,6 @@
         color: #FFFFFF;
         padding: 40px 0px 0px;
     }
-
 
 }
 
@@ -112,6 +203,14 @@
 
     .second-line {
         padding-top: 30px;
+    }
+}
+
+#chartPart {
+    padding: 120px 0 20px;
+
+    img {
+        width: 100%;
     }
 }
 

@@ -58,7 +58,7 @@ const Delegator = () => {
                     <ul>
                       <li className="one">Brightlystake</li>
                       <li className="two">
-                        0x7fa2033272db2e4116ce314fd789a3a148f2ed55
+                        <a href="./individual">0x7fa2033272db2e4116ce314fd789a3a148f2ed55</a>
                       </li>
                       <li className="three">80000.0</li>
                       <li className="four">2</li>

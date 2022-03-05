@@ -2,16 +2,24 @@ import React from "react";
 import { BiRocket } from "@react-icons/all-files/bi/BiRocket";
 import { BiSearchAlt } from "@react-icons/all-files/bi/BiSearchAlt";
 import { BiDotsHorizontalRounded } from "@react-icons/all-files/bi/BiDotsHorizontalRounded";
+import graph1 from "../../../assets/images/Graph 1.png";
+import graph2 from "../../../assets/images/Graph 2.png";
 import { Accordion } from "react-bootstrap";
 
-const Moonbeam = () => {
+const Individual = () => {
   return (
     <div>
-      <div id="moonbeamBanner">
+      <div id="individualBanner">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2>Moonbeam Stats Page</h2>
+              <h4>
+                <a href="#">0x0a0952e7d58817c40473d57a7e37f188ddb81ff9</a>
+              </h4>
+
+              <div className="luckyveBtn">
+                <p>'luckyve'</p>
+              </div>
             </div>
           </div>
         </div>
@@ -84,12 +92,25 @@ const Moonbeam = () => {
               </div>
             </div>
             <div className="col-lg-2">
-              <div className="box last-box">
+              <div className="box">
                 <p>Rewards Eligibility</p>
                 <h6>Top 300 Nominators</h6>
               </div>
             </div>
             <div className="col-lg-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="chartPart">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <img src={graph1} />
+            </div>
+            <div className="col-lg-6">
+              <img src={graph2} />
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +121,9 @@ const Moonbeam = () => {
             <div className="col-lg-12 text-center">
               <h2>Click on each collator address for more details</h2>
               <p>Updated every 5 minutes.</p>
-              <p className="last-line">Updated as of block : <span>446812</span> </p>
+              <p className="last-line">
+                Updated as of block : <span>446812</span>{" "}
+              </p>
             </div>
 
             <div className="col-lg-12">
@@ -463,10 +486,8 @@ const Moonbeam = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };
 
-export default Moonbeam;
+export default Individual;

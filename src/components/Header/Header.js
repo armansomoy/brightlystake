@@ -16,7 +16,7 @@ const Header = () => {
                     <Nav className="m-auto">
                         <NavLink to="/moonbeam" exact className='nav-link'>MOONBEAM</NavLink>
                         <NavLink to="/" exact className='nav-link'>DELEGATORS</NavLink>
-                        <NavLink to="/moonriver" exact className='nav-link'>MOONRIVER</NavLink>
+                        <NavLink to="/individual" exact className='nav-link'>MOONRIVER</NavLink>
                         <NavLink to="/stakwithus" exact className='nav-link'>STAKE WITH US</NavLink>
                     </Nav>
                     </Navbar.Collapse>
