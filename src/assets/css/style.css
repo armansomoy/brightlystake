@@ -6,13 +6,8 @@
   width: 100%;
   z-index: 99; }
 
-.nav-link {
-  font-weight: 600;
-  font-size: 24px;
-  color: #fff; }
-
 .navbar-expand-lg .navbar-nav {
-  padding: 15px 10px;
+  padding: 15px 20px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.15);
   border: 0.5px solid #FFFFFF;
@@ -23,7 +18,14 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
-  padding: 0px 25px; }
+  padding: 0px 25px;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 24px; }
+
+.navbar-light .navbar-nav .nav-link.active {
+  background: #FFFFFF;
+  border-radius: 20px; }
 
 body {
   font-family: 'Poppins', sans-serif; }
@@ -94,7 +96,7 @@ body {
         font-size: 25px; }
 
 #moonbeam {
-  padding: 130px 0; }
+  padding: 130px 0 60px; }
   #moonbeam h2 {
     font-weight: bold;
     font-size: 32px;
@@ -161,12 +163,23 @@ body {
         right: 30px;
         position: absolute; }
       #moonbeam .accordion-item .accordion-button .active-btn {
+        color: #fff;
         font-weight: bold;
         font-size: 14px;
         line-height: 26px;
         width: 100px;
         height: 46px;
-        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        border-radius: 10px;
+        border: none; }
+      #moonbeam .accordion-item .accordion-button .inactive-btn {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(84.04deg, #DE0000 0%, #FF4D00 97.37%);
         border-radius: 10px;
         border: none; }
       #moonbeam .accordion-item .accordion-button:focus {
@@ -178,18 +191,76 @@ body {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         border-bottom: none; }
+        #moonbeam .accordion-item .accordion-button:focus .active-btn {
+          color: #222737;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          width: 100px;
+          height: 46px;
+          background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+          border-radius: 10px;
+          border: none; }
+        #moonbeam .accordion-item .accordion-button:focus .inactive-btn {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          width: 100px;
+          height: 46px;
+          background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+          border-radius: 10px;
+          border: none; }
         #moonbeam .accordion-item .accordion-button:focus ul li {
           color: #fff; }
+    #moonbeam .accordion-item .accordion-button:not(.collapsed) {
+      color: #fff;
+      background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+      border-radius: 0px;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px; }
+      #moonbeam .accordion-item .accordion-button:not(.collapsed) ul li {
+        color: white; }
+      #moonbeam .accordion-item .accordion-button:not(.collapsed) .active-btn {
+        color: #222737;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        border-radius: 10px;
+        border: none; }
+      #moonbeam .accordion-item .accordion-button:not(.collapsed) .inactive-btn {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        border-radius: 10px;
+        border: none; }
   #moonbeam .accordion-body {
     padding: 0;
     color: #fff;
     background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
     backdrop-filter: blur(20px);
-    /* Note: backdrop-filter has minimal browser support */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0px;
-    border-top-right-radius: 0px; }
+    border-top-right-radius: 0px;
+    position: relative; }
+    #moonbeam .accordion-body:after {
+      position: absolute;
+      top: 0;
+      left: 3%;
+      height: 1px;
+      width: 92%;
+      background-color: #777777;
+      content: ''; }
     #moonbeam .accordion-body ul {
       padding: 0;
       width: 100%;
@@ -246,6 +317,229 @@ body {
         text-align: right !important;
         width: 26%; }
 
+#moonriver {
+  padding: 0px 0 180px; }
+  #moonriver .moonriver-header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #222737;
+    padding-bottom: 50px; }
+  #moonriver p {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #777777;
+    padding-bottom: 40px; }
+    #moonriver p span {
+      color: #FF4D00; }
+  #moonriver .table-head ul {
+    padding: 0; }
+    #moonriver .table-head ul li {
+      display: inline-block;
+      width: 12%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 26px;
+      color: #262B3C;
+      font-weight: normal; }
+    #moonriver .table-head ul .two {
+      width: 35%; }
+    #moonriver .table-head ul .six {
+      width: 14%; }
+  #moonriver .accordion-item {
+    margin-bottom: 15px;
+    border: none; }
+    #moonriver .accordion-item .accordion-button {
+      color: #222737;
+      background: #FFFFFF;
+      border: 0.25px solid #2227375e;
+      box-sizing: border-box;
+      box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
+      backdrop-filter: blur(20px);
+      border-radius: 15px;
+      padding: 0; }
+      #moonriver .accordion-item .accordion-button ul {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0px; }
+        #moonriver .accordion-item .accordion-button ul li {
+          display: inline-block;
+          width: 12%;
+          text-align: center;
+          font-size: 14px;
+          line-height: 26px;
+          color: #262B3C;
+          font-weight: normal;
+          padding: 40px 0; }
+        #moonriver .accordion-item .accordion-button ul .four {
+          color: #27E2A2; }
+        #moonriver .accordion-item .accordion-button ul .two {
+          width: 35%; }
+        #moonriver .accordion-item .accordion-button ul .six {
+          width: 14%; }
+      #moonriver .accordion-item .accordion-button::after {
+        width: 1rem;
+        height: 1rem;
+        background-size: 1rem;
+        right: 30px;
+        position: absolute; }
+      #moonriver .accordion-item .accordion-button .active-btn {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        border-radius: 10px;
+        border: none; }
+      #moonriver .accordion-item .accordion-button .inactive-btn {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(84.04deg, #DE0000 0%, #FF4D00 97.37%);
+        border-radius: 10px;
+        border: none; }
+      #moonriver .accordion-item .accordion-button:focus {
+        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        backdrop-filter: blur(20px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: none; }
+        #moonriver .accordion-item .accordion-button:focus .active-btn {
+          color: #222737;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          width: 100px;
+          height: 46px;
+          background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+          border-radius: 10px;
+          border: none; }
+        #moonriver .accordion-item .accordion-button:focus .inactive-btn {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          width: 100px;
+          height: 46px;
+          background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+          border-radius: 10px;
+          border: none; }
+        #moonriver .accordion-item .accordion-button:focus ul li {
+          color: #fff; }
+    #moonriver .accordion-item .accordion-button:not(.collapsed) {
+      color: #fff;
+      background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+      border-radius: 0px;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px; }
+      #moonriver .accordion-item .accordion-button:not(.collapsed) ul li {
+        color: white; }
+      #moonriver .accordion-item .accordion-button:not(.collapsed) .active-btn {
+        color: #222737;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        border-radius: 10px;
+        border: none; }
+      #moonriver .accordion-item .accordion-button:not(.collapsed) .inactive-btn {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        border-radius: 10px;
+        border: none; }
+  #moonriver .accordion-body {
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: relative; }
+    #moonriver .accordion-body:after {
+      position: absolute;
+      top: 0;
+      left: 3%;
+      height: 1px;
+      width: 92%;
+      background-color: #777777;
+      content: ''; }
+    #moonriver .accordion-body ul {
+      padding: 0;
+      width: 100%;
+      margin-bottom: 0px; }
+      #moonriver .accordion-body ul li {
+        display: inline-block;
+        width: 23%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 26px;
+        color: #fff;
+        font-weight: normal;
+        padding: 40px 0; }
+        #moonriver .accordion-body ul li .action-btn {
+          background: rgba(238, 238, 238, 0.1);
+          border: 0.5px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 15px;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          color: #FFFFFF;
+          padding: 15px; }
+          #moonriver .accordion-body ul li .action-btn svg {
+            height: 20px;
+            width: 20px;
+            margin-left: 5px; }
+        #moonriver .accordion-body ul li p {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 26px;
+          padding-bottom: 0px;
+          color: #EEEEEE; }
+        #moonriver .accordion-body ul li h4 {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 48px;
+          color: #EEEEEE; }
+      #moonriver .accordion-body ul .three h4 {
+        /* Fallback: Set a background color. */
+        background-color: red;
+        /* Create the gradient. */
+        background-image: linear-gradient(90deg, #27E2A2, #C1ED30);
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent; }
+      #moonriver .accordion-body ul .four {
+        text-align: right !important;
+        width: 26%; }
+
 #footer {
   background: #0873D7;
   box-shadow: 0px -7px 15px rgba(34, 34, 34, 0.05); }
@@ -255,5 +549,278 @@ body {
     line-height: 60px;
     color: #fff;
     margin-bottom: 0px; }
+
+#moonbeamBanner {
+  height: 350px;
+  background-image: url(../images/BG-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: cover;
+  position: relative;
+  padding-top: 190px; }
+  #moonbeamBanner h2 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 63px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 40px 0px 0px; }
+
+#moonbeamBoxes {
+  padding: 30px 0px; }
+  #moonbeamBoxes .box {
+    padding: 15px 15px 0px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 13px 1px rgba(34, 34, 34, 0.2);
+    border-radius: 20px;
+    height: 115px;
+    text-align: center;
+    position: relative; }
+    #moonbeamBoxes .box p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: capitalize;
+      color: #222737;
+      padding-top: 5px; }
+    #moonbeamBoxes .box h6 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: capitalize;
+      color: #222737; }
+    #moonbeamBoxes .box:after {
+      position: absolute;
+      content: " ";
+      bottom: 0;
+      left: 15px;
+      height: 5px;
+      width: 80%;
+      background-color: #F14A16; }
+  #moonbeamBoxes .second-line {
+    padding-top: 30px; }
+
+#moonbeamStage {
+  padding: 130px 0 60px; }
+  #moonbeamStage h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #222737; }
+  #moonbeamStage p {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #777777; }
+    #moonbeamStage p span {
+      color: #46D35C; }
+  #moonbeamStage .last-line {
+    padding-bottom: 50px; }
+  #moonbeamStage .table-head ul {
+    padding: 0; }
+    #moonbeamStage .table-head ul li {
+      display: inline-block;
+      width: 12%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 26px;
+      color: #262B3C;
+      font-weight: normal; }
+    #moonbeamStage .table-head ul .two {
+      width: 35%; }
+    #moonbeamStage .table-head ul .six {
+      width: 14%; }
+  #moonbeamStage .accordion-item {
+    margin-bottom: 15px;
+    border: none; }
+    #moonbeamStage .accordion-item .accordion-button {
+      color: #222737;
+      background: #FFFFFF;
+      border: 0.25px solid #2227375e;
+      box-sizing: border-box;
+      box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
+      backdrop-filter: blur(20px);
+      border-radius: 15px;
+      padding: 0; }
+      #moonbeamStage .accordion-item .accordion-button ul {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0px; }
+        #moonbeamStage .accordion-item .accordion-button ul li {
+          display: inline-block;
+          width: 12%;
+          text-align: center;
+          font-size: 14px;
+          line-height: 26px;
+          color: #262B3C;
+          font-weight: normal;
+          padding: 40px 0; }
+        #moonbeamStage .accordion-item .accordion-button ul .four {
+          color: #27E2A2; }
+        #moonbeamStage .accordion-item .accordion-button ul .two {
+          width: 35%; }
+        #moonbeamStage .accordion-item .accordion-button ul .six {
+          width: 14%; }
+      #moonbeamStage .accordion-item .accordion-button::after {
+        width: 1rem;
+        height: 1rem;
+        background-size: 1rem;
+        right: 30px;
+        position: absolute; }
+      #moonbeamStage .accordion-item .accordion-button .active-btn {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        border-radius: 10px;
+        border: none; }
+      #moonbeamStage .accordion-item .accordion-button .inactive-btn {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(84.04deg, #DE0000 0%, #FF4D00 97.37%);
+        border-radius: 10px;
+        border: none; }
+      #moonbeamStage .accordion-item .accordion-button:focus {
+        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        backdrop-filter: blur(20px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: none; }
+        #moonbeamStage .accordion-item .accordion-button:focus .active-btn {
+          color: #222737;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          width: 100px;
+          height: 46px;
+          background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+          border-radius: 10px;
+          border: none; }
+        #moonbeamStage .accordion-item .accordion-button:focus .inactive-btn {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          width: 100px;
+          height: 46px;
+          background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+          border-radius: 10px;
+          border: none; }
+        #moonbeamStage .accordion-item .accordion-button:focus ul li {
+          color: #fff; }
+    #moonbeamStage .accordion-item .accordion-button:not(.collapsed) {
+      color: #fff;
+      background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+      border-radius: 0px;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px; }
+      #moonbeamStage .accordion-item .accordion-button:not(.collapsed) ul li {
+        color: white; }
+      #moonbeamStage .accordion-item .accordion-button:not(.collapsed) .active-btn {
+        color: #222737;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        border-radius: 10px;
+        border: none; }
+      #moonbeamStage .accordion-item .accordion-button:not(.collapsed) .inactive-btn {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+        border-radius: 10px;
+        border: none; }
+  #moonbeamStage .accordion-body {
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: relative; }
+    #moonbeamStage .accordion-body:after {
+      position: absolute;
+      top: 0;
+      left: 3%;
+      height: 1px;
+      width: 92%;
+      background-color: #777777;
+      content: ''; }
+    #moonbeamStage .accordion-body ul {
+      padding: 0;
+      width: 100%;
+      margin-bottom: 0px; }
+      #moonbeamStage .accordion-body ul li {
+        display: inline-block;
+        width: 23%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 26px;
+        color: #fff;
+        font-weight: normal;
+        padding: 40px 0; }
+        #moonbeamStage .accordion-body ul li .action-btn {
+          background: rgba(238, 238, 238, 0.1);
+          border: 0.5px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 15px;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          color: #FFFFFF;
+          padding: 15px; }
+          #moonbeamStage .accordion-body ul li .action-btn svg {
+            height: 20px;
+            width: 20px;
+            margin-left: 5px; }
+        #moonbeamStage .accordion-body ul li p {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 26px;
+          padding-bottom: 0px;
+          color: #EEEEEE; }
+        #moonbeamStage .accordion-body ul li h4 {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 48px;
+          color: #EEEEEE; }
+      #moonbeamStage .accordion-body ul .three h4 {
+        /* Fallback: Set a background color. */
+        background-color: red;
+        /* Create the gradient. */
+        background-image: linear-gradient(90deg, #27E2A2, #C1ED30);
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent; }
+      #moonbeamStage .accordion-body ul .four {
+        text-align: right !important;
+        width: 26%; }
 
 /*# sourceMappingURL=style.css.map */

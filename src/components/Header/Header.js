@@ -2,6 +2,7 @@ import React from 'react';
 import Bootstrap from 'bootstrap';
 import Logo from '../../assets/images/logo.png';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -13,10 +14,10 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="m-auto">
-                        <Nav.Link href="#home">MOONBEAM</Nav.Link>
-                        <Nav.Link href="#link">DELEGATORS</Nav.Link>
-                        <Nav.Link href="#link">MOONRIVER</Nav.Link>
-                        <Nav.Link href="#link">STAKE WITH US</Nav.Link>
+                        <NavLink to="/moonbeam" exact className='nav-link'>MOONBEAM</NavLink>
+                        <NavLink to="/" exact className='nav-link'>DELEGATORS</NavLink>
+                        <NavLink to="/moonriver" exact className='nav-link'>MOONRIVER</NavLink>
+                        <NavLink to="/stakwithus" exact className='nav-link'>STAKE WITH US</NavLink>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
